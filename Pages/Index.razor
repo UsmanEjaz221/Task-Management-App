@@ -1,0 +1,72 @@
+﻿@page "/"
+
+@using TaskManager.Data
+
+<PageTitle>Task Manager</PageTitle>
+
+<h1>Manage Tasks</h1>
+<div class="container px-5">
+	<div style="margin: 2rem 1.2rem;" class="input-group px-5">
+		<label class="input-group-text">Task</label> <input @bind="Task" class="form-control" /> 
+		<button class="btn btn-dark mx-1" type="button" @onclick="saveTask">Save</button>
+	</div>
+
+	<div class="showTasks px-4">
+		@if (Tasks.Count == 0)
+		{
+			<i>No Tasks added</i>
+		}
+		else
+		{
+			<ul>
+				@foreach (var task in Tasks)
+				{
+					<li>
+						<span style="display: block; text-decoration: @(task.IsComplete ? "line-through" : "none"); opacity: @(task.IsComplete? "60%":"100%")  ">@task.getTask() </span>
+						<button class="btn btn-outline-success btn-sm" @onclick="() => taskDone(task)">@(task.IsComplete ? "Mark as Incomplete" : "Mark as Complete")</button>
+						<button class="btn btn-outline-secondary btn-sm" @onclick="() => taskEdit(task)">Edit</button>
+						<button class="btn btn-outline-danger btn-sm" @onclick="() => taskRemove(task)">Remove</button>
+						<hr />
+					</li>
+				}
+			</ul>
+		}
+	</div>
+
+</div>
+@code {
+	private string Task;
+	// private bool isComplete
+
+
+	private List<taskClass> Tasks = new List<taskClass>();		// list of objects
+	private taskClass newTask = new taskClass();
+
+	public void saveTask()
+	{
+		// Console.WriteLine($"Saved ! {Task}");
+		if(Task == "")
+		{
+			return;
+		}
+		taskClass newTask = new taskClass();
+		newTask.AddTask(Task);
+		Task = "";
+		Tasks.Add(newTask);
+	}
+
+
+	public void taskDone(taskClass task)
+	{
+		task.IsComplete = !task.IsComplete;
+	}
+	public void taskEdit(taskClass task)
+	{
+		Task = task.getTask();
+		Tasks.Remove(task);
+	}
+	public void taskRemove(taskClass task)
+	{
+		Tasks.Remove(task);
+	}
+}
