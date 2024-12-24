@@ -1,13 +1,40 @@
-﻿@page "/"
-@using Blazored.LocalStorage;
-@inject AppState appState;
+﻿@* @page "/" *@
+@* @using Blazored.LocalStorage; *@
+@* @inject AppState appState; *@
 
 
-@using TaskManager.Data
+@* @using TaskManager.Data *@
 
-<PageTitle>Task Manager</PageTitle>
+@* <PageTitle>Task Manager</PageTitle> *@
 
-<h1>Home Page</h1>
+@* <h1>Home Page</h1> *@
+
+@page "/"
+
+<h3>Welcome To Dashboard</h3>
+<div class="d-flex flex-wrap justify-content-center">
+	<TaskSummaryCard Title="Total Tasks"
+					 Count="100"
+					 Description="All tasks assigned"
+					 CardHeaderColor="#6a67ce" />
+
+	<TaskSummaryCard Title="Completed Tasks"
+					 Count="40"
+					 Description="Tasks completed successfully"
+					 CardHeaderColor="#28a745" />
+
+	<TaskSummaryCard Title="Remaining Tasks"
+					 Count="60"
+					 Description="Tasks yet to be completed"
+					 CardHeaderColor="#dc3545" />
+</div>
+<!-- Card Component -->
+
+<div class="d-flex ">
+	<CardWithCanvas TotalTasks="30" CompletedTasks="10" />
+	<AddTask CardHeaderColor="#6c757d" />
+	@* <Calander CardHeaderColor="#ff8c00" /> *@
+</div>
 
 @code {
 	/*private string Task;

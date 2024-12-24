@@ -33,3 +33,42 @@ C:\VisualProgramming\TaskManager\bin\Debug\net6.0\Blazored.LocalStorage.dll
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.csproj.AssemblyReference.cache
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.sourcelink.json
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskMana.F3FB485A.Up2Date
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\appsettings.Development.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\appsettings.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.staticwebassets.runtime.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.staticwebassets.endpoints.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.exe
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.deps.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.runtimeconfig.json
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.dll
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\TaskManager.pdb
+D:\3rd Semester\Project\Task-Management-App\bin\Debug\net6.0\Blazored.LocalStorage.dll
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.csproj.AssemblyReference.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.GeneratedMSBuildEditorConfig.editorconfig
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.AssemblyInfoInputs.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.AssemblyInfo.cs
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.csproj.CoreCompileInputs.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.MvcApplicationPartsAssemblyInfo.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.RazorAssemblyInfo.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.RazorAssemblyInfo.cs
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.sourcelink.json
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\scopedcss\bundle\TaskManager.styles.css
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\scopedcss\projectbundle\TaskManager.bundle.scp.css
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets.build.json
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets.development.json
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets.build.endpoints.json
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets\msbuild.TaskManager.Microsoft.AspNetCore.StaticWebAssets.props
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets\msbuild.TaskManager.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets\msbuild.build.TaskManager.props
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.TaskManager.props
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.TaskManager.props
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets.pack.json
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\staticwebassets.upToDateCheck.txt
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskMana.F3FB485A.Up2Date
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.dll
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\refint\TaskManager.dll
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.pdb
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\TaskManager.genruntimeconfig.cache
+D:\3rd Semester\Project\Task-Management-App\obj\Debug\net6.0\ref\TaskManager.dll

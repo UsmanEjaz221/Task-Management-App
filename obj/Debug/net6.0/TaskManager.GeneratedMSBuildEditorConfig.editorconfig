@@ -9,51 +9,65 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TaskManager
 build_property.RootNamespace = TaskManager
-build_property.ProjectDir = C:\VisualProgramming\TaskManager\
+build_property.ProjectDir = D:\3rd Semester\Project\Task-Management-App\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\VisualProgramming\TaskManager
+build_property.MSBuildProjectDirectory = D:\3rd Semester\Project\Task-Management-App
 build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 6.0
+build_property.EnableCodeStyleSeverity = 
 
-[C:/VisualProgramming/TaskManager/App.razor]
+[D:/3rd Semester/Project/Task-Management-App/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Pages/Index.razor]
+[D:/3rd Semester/Project/Task-Management-App/Pages/AddTask.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkVGFzay5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Semester/Project/Task-Management-App/Pages/CardWithCanvas.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FyZFdpdGhDYW52YXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Semester/Project/Task-Management-App/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Pages/ManageTasks.razor]
+[D:/3rd Semester/Project/Task-Management-App/Pages/ManageTasks.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTWFuYWdlVGFza3MucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Shared/SurveyPrompt.razor]
+[D:/3rd Semester/Project/Task-Management-App/Pages/TaskSummaryCard.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGFza1N1bW1hcnlDYXJkLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/3rd Semester/Project/Task-Management-App/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/_Imports.razor]
+[D:/3rd Semester/Project/Task-Management-App/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Shared/MainLayout.razor]
+[D:/3rd Semester/Project/Task-Management-App/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3lby01lcmp
 
-[C:/VisualProgramming/TaskManager/Shared/NavMenu.razor]
+[D:/3rd Semester/Project/Task-Management-App/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-i8kt2k08na
 
-[C:/VisualProgramming/TaskManager/Pages/Error.cshtml]
+[D:/3rd Semester/Project/Task-Management-App/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Pages/_Host.cshtml]
+[D:/3rd Semester/Project/Task-Management-App/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/VisualProgramming/TaskManager/Pages/_Layout.cshtml]
+[D:/3rd Semester/Project/Task-Management-App/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

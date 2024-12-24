@@ -1,0 +1,35 @@
+﻿@inherits LayoutComponentBase
+@inject IJSRuntime JS
+
+<div class="card custom-card" style="width: 22rem;">
+    <div class="card-header">
+        Task Completion
+    </div>
+    <!-- Canvas for circular progress -->
+    <div class="chart-container">
+        <canvas id="circularProgressChart" width="200" height="200"></canvas>
+        <div class="chart-center-text">
+            <span>@Math.Round((double)CompletedTasks / TotalTasks * 100)%</span>
+        </div>
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Task Overview</h5>
+        <p class="card-text">You have completed @CompletedTasks of @TotalTasks tasks.</p>
+    </div>
+</div>
+
+@code {
+    [Parameter] public int TotalTasks { get; set; } = 30;
+    [Parameter] public int CompletedTasks { get; set; } = 25;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Pass task data to JavaScript for rendering
+            await JS.InvokeVoidAsync("renderCircularProgress", CompletedTasks, TotalTasks);
+        }
+    }
+}
+
+
