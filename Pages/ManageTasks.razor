@@ -1,0 +1,125 @@
+﻿@page "/ManageTasks"
+@using Blazored.LocalStorage;
+@inject AppState appState;
+@inject ILocalStorageService LocalStorage
+
+
+
+@using TaskManager.Data
+
+<PageTitle>Task Manager</PageTitle>
+
+<h1>Manage Tasks</h1>
+<div class="container px-5">
+	<div style="margin: 2rem 1.2rem;" class="input-group px-5">
+		<label class="input-group-text">Task</label> <input @bind="Task" class="form-control" />
+		<button class="btn btn-dark mx-1" type="button" @onclick="saveTask">Save</button>
+	</div>
+
+	<div class="showTasks px-4">
+		@if (Tasks.Count == 0)
+		{
+			<i>No Tasks added</i>
+		}
+		else
+		{
+			<ul>
+				@foreach (var task in Tasks)
+				{
+					<li>
+						<span style="display: block; text-decoration: @(task.IsComplete ? "line-through" : "none"); opacity: @(task.IsComplete? "60%":"100%")  ">@task.getTask() </span>
+						<button class="btn btn-outline-success btn-sm" @onclick="() => taskDone(task)">@(task.IsComplete ? "Mark as Incomplete" : "Mark as Complete")</button>
+						<button class="btn btn-outline-secondary btn-sm" @onclick="() => taskEdit(task)">Edit</button>
+						<button class="btn btn-outline-danger btn-sm" @onclick="() => taskRemove(task)">Remove</button>
+						<hr />
+					</li>
+				}
+			</ul>
+		}
+	</div>
+
+</div>
+@code {
+	private string Task;
+	// private bool isComplete
+
+
+	private List<taskClass> Tasks = new List<taskClass>();      // list of objects
+	private taskClass newTask = new taskClass();
+
+	public async Task saveTask()
+	{
+		if (string.IsNullOrWhiteSpace(Task))
+		{
+			return;
+		}
+		taskClass newTask = new taskClass();
+		newTask.AddTask(Task);
+		Task = "";
+		Tasks.Add(newTask);
+		await SaveTaskLocally(); // Persist changes
+	}
+
+
+	public async Task taskDone(taskClass task)
+	{
+		task.IsComplete = !task.IsComplete;
+		await SaveTaskLocally(); // Persist changes
+	}
+	public void taskEdit(taskClass task)
+	{
+		Task = task.getTask();
+		Tasks.Remove(task);
+		// SaveTaskLocally(); // Persist changes
+	}
+	public async Task taskRemove(taskClass task)
+	{
+		Tasks.Remove(task);
+		await SaveTaskLocally(); // Persist changes
+	}
+	// ***************************************************************
+
+	private ILocalStorageService _localStorage;
+
+	// private readonly ILocalStorageService _localStorage;
+	private const string TaskKey = "Task";      // key to store in local stroage
+	public ManageTasks()
+	{
+		
+	}
+	protected override async Task OnInitializedAsync()
+	{
+		_localStorage = LocalStorage;
+		await LoadTask(); // Load existing tasks
+	}
+
+	public ManageTasks(ILocalStorageService localStorage)
+	{
+		_localStorage = localStorage;
+		LoadTask();     // load the task from localStorage when the app starts
+	}
+
+	// save the task to local storage
+	public async Task SaveTaskLocally()
+	{
+		await _localStorage.SetItemAsync(TaskKey, Tasks);
+	}
+
+
+	// protected override async Task OnInitializedAsync()
+	// {
+	// 	await LoadTask();
+	// }
+
+	// load the tasks from the local storage if they exist
+	private async Task LoadTask()
+	{
+		var storedTasks = await _localStorage.GetItemAsync<List<taskClass>>(TaskKey);
+		Tasks = storedTasks;
+	}
+
+
+	
+
+
+}

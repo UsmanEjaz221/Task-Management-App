@@ -2,9 +2,8 @@
 {
 	public class taskClass
 	{
-		private string Task { get; set; }
-		//public int totalTasks;		// instead, count the size of the array	
-		public bool IsComplete { get; set; }
+		public string Task { get; set; } = string.Empty; // Ensure public property
+		public bool IsComplete { get; set; } = false;
 
 
 		public taskClass() { 

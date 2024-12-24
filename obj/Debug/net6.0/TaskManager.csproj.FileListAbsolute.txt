@@ -29,3 +29,7 @@ C:\VisualProgramming\TaskManager\obj\Debug\net6.0\refint\TaskManager.dll
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.pdb
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.genruntimeconfig.cache
 C:\VisualProgramming\TaskManager\obj\Debug\net6.0\ref\TaskManager.dll
+C:\VisualProgramming\TaskManager\bin\Debug\net6.0\Blazored.LocalStorage.dll
+C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.csproj.AssemblyReference.cache
+C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskManager.sourcelink.json
+C:\VisualProgramming\TaskManager\obj\Debug\net6.0\TaskMana.F3FB485A.Up2Date

@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using TaskManager.Data;
+using Blazored.LocalStorage;
+using System.Net.NetworkInformation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +10,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddBlazoredLocalStorage();
+
+builder.Services.AddScoped<AppState>();
+
+
+//builder.Services.AddScoped<AppState>();
 
 var app = builder.Build();
 
